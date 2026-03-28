@@ -47,8 +47,7 @@
                                     <div class="blog-image col-md-4">
                                         <div class="post-media">
                                             <a href="#" title="">
-                                                <img th:src="${news.image}" alt="image" class="post-image img-fluid">
-                                                <!-- <img src="${news.image}" alt="image" class="img-fluid"> -->
+<img th:src="${news.image != null ? news.image : 'https://via.placeholder.com/150'}">                                                <!-- <img src="${news.image}" alt="image" class="img-fluid"> -->
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div>
